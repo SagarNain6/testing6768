@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Products Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-gray-800">Premium Collection</h1>
+            <p class="text-gray-600 mt-2">Discover our curated selection of high-quality products</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+            <div class="mb-4 md:mb-0">
+                <h2 class="text-xl font-semibold text-gray-800">20 Products</h2>
+            </div>
+            
+            <div class="flex flex-wrap gap-2">
+                <button class="filter-btn active px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="all">All</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="electronics">Antibiotics</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="home">Anti cough & cold</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="fashion">Cardio Vascular</button>
+                   <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="anti">Anti-allergy</button>
+                   <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-category="other">other</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5049a508-6d9e-42c5-a8a9-400a5b995f6c.png" alt="Modern wireless headphones with noise cancellation in matte black finish" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Azithromycin</h3>
+                    <p class="text-gray-600 text-sm mb-2">250, 500 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">capsules</span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a89c47e-ea01-4a40-9238-646ecbaf7bae.png" alt="Sleek smartwatch with fitness tracking features and OLED display" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Linezolid</h3>
+                    <p class="text-gray-600 text-sm mb-2">200 mg, 400 mg, 600 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5e1fddcb-8414-4e47-9de9-a42c4fc02566.png" alt="Minimalist ceramic coffee mug with modern geometric pattern" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Linezolid</h3>
+                    <p class="text-gray-600 text-sm mb-2">300 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2992193-a2f2-42fd-bdab-21134da825c6.png" alt="Classic leather wallet with multiple card slots and RFID protection" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Levofloxacin	</h3>
+                    <p class="text-gray-600 text-sm mb-2">250 mg, 500 mg, 750 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d58615f4-1224-4dd3-aa2a-e06f62b27da2.png" alt="High-end DSLR camera with professional lens kit" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">	Cycloserine	</h3>
+                    <p class="text-gray-600 text-sm mb-2">250 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">capsules</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="electronics">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d55fa104-e9bd-4bad-99dc-5bc9021de3d0.png" alt="Soft cotton throw blanket with geometric pattern in neutral tones" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Amlodipine</h3>
+                    <p class="text-gray-600 text-sm mb-2">5 mg, 10 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="fashion">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dde7b0bd-989e-4400-a5a0-4da5c10d3d9b.png" alt="Stylish stainless steel water bottle with double wall insulation" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Clopidogrel</h3>
+                    <p class="text-gray-600 text-sm mb-2">75 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="fashion">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01e64aed-91a8-44a0-a509-bc1dad91b56d.png" alt="Wireless charging pad with LED indicator for multiple devices" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Rosuvastatin</h3>
+                    <p class="text-gray-600 text-sm mb-2">5 mg, 10 mg, 20 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="fashion">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa5411d2-6dd4-4c03-8aab-2b5dba21ea03.png" alt="Modern desk lamp with adjustable arm and warm LED lighting" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Loratadine</h3>
+                    <p class="text-gray-600 text-sm mb-2">5 mg/5 ml</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">oral solution</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="anti">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/acae5dd3-b163-478f-bb6b-346e713f7f04.png" alt="Premium leather backpack with laptop compartment and water-resistant finish" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Loratadine</h3>
+                    <p class="text-gray-600 text-sm mb-2">10 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="anti">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8ef04b85-a191-4b1e-9654-21828e23ae30.png" alt="Bluetooth speaker with 360-degree sound and waterproof design" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Ambroxol</h3>
+                    <p class="text-gray-600 text-sm mb-2">15 mg/5 ml, 30 mg/5 ml</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">oral solution</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="home">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08c6d83e-53c1-4d56-9dfc-033e986cb1d8.png" alt="Set of 4 bamboo cutting boards in different sizes with juice groove" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Bromhexine</h3>
+                    <p class="text-gray-600 text-sm mb-2">4 mg/5 ml, 8 mg/5 ml</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">syrup</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="home">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f7e048a-82bb-415d-b5c1-b7387edb5eb0.png" alt="Premium stainless steel razor with ergonomic handle and replacement blades" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Paracetamol</h3>
+                    <p class="text-gray-600 text-sm mb-2">25 mg/ml</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">oral solution</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b14609d-9466-469d-858c-7eca06a80f61.png" alt="Ergonomic wireless mouse with customizable buttons and silent clicks" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Valacyclovir</h3>
+                    <p class="text-gray-600 text-sm mb-2">500 mg, 1000 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b99c31d4-60b6-4723-b611-8b0300d1e2fd.png" alt="Modern ceramic plant pot with drainage hole and minimalist design" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Rimantadine</h3>
+                    <p class="text-gray-600 text-sm mb-2">50 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e47b4647-480b-4516-8b42-8bf8c71d8fac.png" alt="Premium polarized sunglasses with UV protection and lightweight frame" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">PAS Tab</h3>
+                    <p class="text-gray-600 text-sm mb-2">1 g</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-gray-800">tablets, enteric-soluble,film-coated</p>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c9fdad2-c3ee-4a39-8ad8-523f74610a2c.png" alt="Compact external SSD drive with high-speed data transfer and rugged design" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Terizidone</h3>
+                    <p class="text-gray-600 text-sm mb-2">150 mg, 250 mg, 300 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">capsules</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e8566aa-a771-4dfa-9a37-dff0642ab216.png" alt="Set of 6 linen napkins in neutral colors with decorative stitching" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Lactolex</h3>
+                    <p class="text-gray-600 text-sm mb-2">667 mg/ml</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">syrup</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/793ee5bf-362a-4d40-8424-8736642218c2.png" alt="Premium leather belt with brushed metal buckle in classic brown" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Celecoxib</h3>
+                    <p class="text-gray-600 text-sm mb-2">200 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">capsules</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md" data-category="other">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09e9832c-4b01-4d61-b661-b5a1ba836312.png" alt="Modern scented candle in glass jar with wooden lid and natural soy wax" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-1">Cinacalcet</h3>
+                    <p class="text-gray-600 text-sm mb-2">30 mg, 60 mg, 90 mg</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">film-coated tablets</span>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>© 2023 Premium Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (category === 'all' || product.dataset.category === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.product-card button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productName = this.closest('.product-card').querySelector('h3').textContent;
+                const productPrice = this.closest('.product-card').querySelector('span').textContent;
+                
+                alert(`Added to cart: ${productName} - ${productPrice}`);
+            });
+        });
+    </script>
+</body>
+</html>
+
